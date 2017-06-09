@@ -1,1 +1,1 @@
-# process
+# NodeJS Image Processing with Multer & GM (GraphicsMagick)
