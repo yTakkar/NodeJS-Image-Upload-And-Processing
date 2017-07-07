@@ -1,1 +1,6 @@
-# NodeJS Image upload & processing with Multer & GM (GraphicsMagick)
+# NodeJS Image Upload And Processing
+
+Image upload & processing with Handy Image Processor package which offers very simple & easy API to use!!
+
+# Requirements
+1. Handy-Image-Processor
