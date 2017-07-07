@@ -15,15 +15,17 @@ const modifyImage = obj => {
     })
 }
 
+const read = util.promisify(fs.readdir)
+const dlt = util.promisify(fs.unlink)
+
 const deleteTempImages = folder => {
     return new Promise((resolve, reject) => {
-        const read = util.promisify(fs.readdir)
         read(folder)       
             .then(items => {
                 items.map(item => {
-                    fs.unlink(folder+item, err => {
-                        err ? reject(err) : resolve('Deleted!')
-                    })
+                    dlt(folder+item)
+                        .then(s => resolve('Deleted') )
+                        .catch(e => reject(err) )
                 }) 
             })
     })
