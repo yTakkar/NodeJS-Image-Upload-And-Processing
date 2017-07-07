@@ -1,1 +1,1 @@
-# NodeJS Image Processing with Multer & GM (GraphicsMagick)
+# NodeJS Image upload & processing with Multer & GM (GraphicsMagick)
